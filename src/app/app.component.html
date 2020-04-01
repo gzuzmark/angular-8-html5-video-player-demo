@@ -1,0 +1,14 @@
+<div id="instructions">
+	<video id="my_video_1" width="600" height="400" controls preload="metadata">
+		<source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
+		<source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' />
+		<track label="English" kind="subtitles" srclang="en" src="../oceans.vtt" default>
+	</video>
+	<button (click)="playPause()">Play/Pause</button>
+	<button (click)="makeBig()">Big</button>
+	<button (click)="makeSmall()">Small</button>
+	<button (click)="makeNormal()">Normal</button>
+	<button (click)="restart();">Restart</button>
+	<button (click)="skip(-10)">Rewind</button>
+	<button (click)="skip(10)">Fastforward</button>
+</div>
